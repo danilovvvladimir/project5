@@ -1,0 +1,59 @@
+.feed {
+    padding: 150px 0;
+    background-color: #F8F8FA;
+    &__subtitle {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #5B5E6D;
+        text-align: center;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 72px;
+        color: #050038;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    &__cards {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 420px);
+        grid-template-rows: repeat (2, 370px);
+        grid-auto-rows: repeat (2, 370px);
+        gap: 30px;
+        justify-content: center;
+    }
+    &__card {
+        border: 1px #E6E6E6 solid;
+        border-radius: 5px;
+        padding: 20px;
+        display: grid;
+        grid-template-rows: 50px, auto;
+        align-content: flex-start;
+        row-gap: 15px;
+        &-header {
+            display: grid;
+            grid-template-columns: 50px auto 25px;
+            column-gap: 10px;
+            img {
+                align-self: center;
+            }
+        }
+        &-body {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #050038;
+        }
+        &-nickname {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #596068;
+        }
+    }
+}
