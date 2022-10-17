@@ -1,8 +1,16 @@
+@import './variables';
 * {
     font-family: "Circular Std", sans-serif;
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
+
+@import 'blocks/btns';
+@import 'blocks/header';
+@import 'blocks/main';
+
+
+@import 'blocks/media';

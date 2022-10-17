@@ -1,0 +1,190 @@
+@media (max-width: 1550px) {
+    .header {
+        padding: 0 50px;
+        &__menu {
+            padding-left: 0px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .header {
+        &__menu {
+            width: 400px;
+        }
+    }
+    .main {
+        &__title {
+            font-size: 70px;
+            line-height: 90px;
+            padding: 0 157px;
+        }
+        &__descr {
+            padding: 0 205px;
+        }
+        &__img {
+            margin-top: 75px;
+            width: 700px;
+        }
+        &__companies {
+            margin-top: 75px;
+            &-wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 200px);
+                grid-template-rows: repeat(2, 32px);
+                grid-auto-rows: repeat(2, 32px);
+                align-content: space-between;
+                row-gap: 15px;
+                justify-content: center;
+                a {
+                    padding: 0 10px;
+                    max-width: none;
+                }
+            }
+            &-item {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__divider {
+            margin-top: 30px;
+        }
+    }
+}
+@media (max-width: 976px) {
+    .container {
+        max-width: 768px;
+    }
+    .header {
+        &__logo {
+            font-size: 30px;
+            line-height: 32px;
+        }
+        &__menu {
+            width: 300px;
+
+        }
+        &__btns a {
+            font-size: 16px;
+            line-height: 18px;
+
+        }
+        &__signin {
+            margin-right: 15px;
+        }
+    }
+    .main {
+        &__title {
+            font-size: 50px;
+            line-height: 60px;
+            padding: 0 100px;
+        }
+        &__descr {
+            padding: 0 105px;
+        }
+        &__img {
+            margin-top: 55px;
+            width: 500px;
+        }
+        &__companies {
+            margin-top: 45px;
+            &-descr {
+                font-size: 14px;
+                line-height: 18px;
+            }
+            &-wrapper {
+                width: 500px;
+                grid-template-columns: repeat(2, 200px);
+            }
+        }
+    }
+    .btn {
+        width: 140px;
+        height: 40px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+    .header {
+        padding: 0 25px;
+        &__menu {
+            display: none;
+        }
+    }
+    .main {
+        &__img {
+            margin-top: 45px;
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+    .header {
+        padding: 0 10px;
+        &__logo {
+            font-size: 25px;
+            line-height: 28px;
+        }
+        &__btns a {
+            font-size: 14px;
+            line-height: 16px;
+
+        }
+        &__signin {
+            margin-right: 10px;
+        }
+    }
+    .main {
+        &__title {
+            font-size: 30px;
+            line-height: 35px;
+            padding: 0 50px;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 18px;
+            padding: 0 55px;
+        }
+        &__img {
+            width: 300px;
+        }
+        &__companies {
+            margin-top: 30px;
+            &-descr {
+                text-align: center;
+                padding: 0 20px;
+                font-size: 12px;
+                line-height: 15px;
+            }
+            &-wrapper {
+                width: 300px;
+                grid-template-columns: 200px;
+                grid-template-rows: repeat(2, 22px);
+                grid-auto-rows: repeat(2, 22px);
+                a {
+                    max-height: 14px;
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .btn {
+        width: 110px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
