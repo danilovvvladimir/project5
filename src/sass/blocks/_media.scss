@@ -52,6 +52,40 @@
             margin-top: 30px;
         }
     }
+    .about {
+        &__header {
+            padding: 0 100px;
+        }
+        &__item {
+            &-text {
+                padding: 0 40px;
+            }
+            &-title {
+                font-size: 60px;
+                line-height: 80px;
+            }
+            &-descr {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            &-link {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        // &__img {
+        //     width: 300px;
+        // }
+        &__title {
+            font-size: 38px;
+            line-height: 40px;
+        }
+        &__descr {
+            padding: 0 70px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
 }
 @media (max-width: 976px) {
     .container {
@@ -100,11 +134,35 @@
             }
         }
     }
+    .about {
+        &__header {
+            padding: 0 40px;
+        }
+        &__item {
+            flex-direction: column;
+            justify-content: center;
+            &-text {
+                text-align: center;
+            }
+            &:nth-child(2) {
+                flex-direction: column-reverse;
+            }
+        }
+        &__img {
+            margin: 0 auto;
+            padding-right: 15px;
+            margin-top: 20px;
+            width: 300px;
+        }
+    }
     .btn {
         width: 140px;
         height: 40px;
         font-size: 15px;
         line-height: 18px;
+    }
+    .btn_special {
+        width: 245px;
     }
 }
 
@@ -122,6 +180,21 @@
         &__img {
             margin-top: 45px;
             width: 400px;
+        }
+    }
+    .about {
+        &__header {
+            padding: 0;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__descr {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        &__items {
+            margin-top: 40px;
         }
     }
 }
@@ -186,5 +259,9 @@
         height: 30px;
         font-size: 14px;
         line-height: 16px;
+    }
+    .btn_special {
+        width: 245px;
+        height: 50px;
     }
 }

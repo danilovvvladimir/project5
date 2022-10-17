@@ -19,4 +19,33 @@
             background-color: #F6F6F6;
         }
     }
+    &_special {
+        position: relative;
+        width: 245px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 32px;
+        color: #0555FF;
+        background: rgba(5, 85, 255, 0.1);
+        border-radius: 30px;
+        padding-left: 35px;
+        &::before {
+            content: '!';
+            width: 27px;
+            height: 27px;
+            background-color: #fff;
+            border-radius: 50%;
+            font-size: 20px;
+            line-height: 27px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+        }
+        &:hover {
+            background: rgba(5, 85, 255, 0.2);;
+        }
+    }
+
 }
